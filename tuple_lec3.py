@@ -1,5 +1,11 @@
-tuple = (2, 1, 3, 1)
-# print(type(tuple))
-print(tuple[1:3])
-print(tuple.index(1))
-print(tuple.count(1))
+# Write a program to count the number of students with the "A" grade in the following tuple. 
+# ["C", "D", "A", "A", "B", "A", "C", "B", "A"]
+
+grades = ("C", "D", "A", "A", "B", "A", "C", "B", "A")
+print(grades.count("A"))
+
+# Store the above values in a list and sort them from "A" to "D".
+grades_list = list(grades)
+print(grades_list)
+grades_list.sort()
+print(grades_list)
