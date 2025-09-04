@@ -1,9 +1,11 @@
-palindrome = input("Enter a list(e.g. [1, 2, 5]): ")
-list1 = []
-print(list1)
-list2 = list1.copy().reverse()
+# list1 = [1, 2, 2, 1]
+list1 = ["m", "a", "a", "m"]
 
-if(list2 == list1):
-    print("The list is a palindrome")
+copy_list1 = list1.copy()
+print(copy_list1)
+copy_list1.reverse()
+
+if(copy_list1 == list1):
+    print("Palindrome")
 else:
-    print("The list is not a palindrome")
+    print("Not a Palindrome")
