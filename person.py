@@ -40,7 +40,27 @@ unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
 # Call the function to print models
-print_models(unprinted_designs, completed_models)
+# print_models(unprinted_designs, completed_models)
 
 # Call the function to show completed models
-show_completed_models(completed_models)
+# show_completed_models(completed_models)
+
+# Mixing positional and arbitrary arguments
+def make_pizza(size, *toppings):
+    """Summarize the pizza we are about to make."""
+    print(f"\nMaking a {size}-inch pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+# make_pizza(12, 'pepperoni', 'mushrooms', 'green peppers')
+
+# Mixing positional and arbitrary keyword arguments
+def build_profile(first, last, **user_info):
+    """Build a dictionary containing everything we know about a user."""
+    profile = {}
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')
+print(user_profile)
