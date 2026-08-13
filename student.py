@@ -9,6 +9,16 @@ class Student():
         return f"{self.name} form {self.house}"
 
     @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        if not name:
+            raise ValueError("Missing name")
+        self._name = name
+
+    @property
     def house(self):
         return self._house
 
