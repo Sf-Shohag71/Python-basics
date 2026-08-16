@@ -6,6 +6,7 @@ def count_words(path):
         contents = path.read_text(encoding = 'utf-8')
     except FileNotFoundError:
         print(f"Sorry! the {path} does not exist.")
+        # pass
     else:
         # Count approximate number of words in the file:
         words = contents.split()
